@@ -1,0 +1,306 @@
+@use '../abstracts'as var;
+
+header#header {
+
+   background   : linear-gradient(to right, var.$bg-Very-light-red, var.$bg-Light-red);
+   border-radius: 0 0 0 10rem;
+
+   @include var.Ubuntu-font;
+
+   min-height: 80vh;
+   height    : 60rem;
+
+   .header--wrapper {
+
+      background         : url(../assets/bg-pattern-intro.svg) 220% no-repeat;
+      background-position: -43.5rem -133.8rem;
+      filter             : drop-shadow(-10px 0 20px var.$Shadow);
+
+      height: 100%;
+   }
+
+   .header--wrapper-content {
+
+      display       : flex;
+      flex-direction: column;
+
+      height: 100%;
+      width : min(144rem, 100%);
+
+      padding: 4.6rem 16.5rem;
+      margin : 0 auto;
+   }
+
+   .header__navigation {
+
+      display: flex;
+
+      #header__navigation--logo {
+
+         display: flex;
+
+         width       : 11.9rem;
+         margin-right: 6.5rem;
+
+         img {
+
+            width: 100%;
+
+            margin: auto 0;
+         }
+      }
+
+      .header__navigation--menu {
+
+         display        : flex;
+         justify-content: space-between;
+
+         width: 100%;
+
+         .header__navigation--menu-options {
+
+            display    : flex;
+            align-items: center;
+
+            height: 100%;
+
+            >li {
+
+               padding : 2.5rem .3rem 2.5rem 0;
+               position: relative;
+
+               >a {
+
+                  color    : var.$White;
+                  font-size: 1.6rem;
+                  opacity  : .8;
+
+                  position: relative;
+
+                  transition: opacity, text, .3s;
+
+                  &::after {
+
+                     content: '';
+
+                     background: url(../assets/icon-arrow-light.svg) center no-repeat;
+
+                     display: block;
+
+                     width : 2rem;
+                     height: 2rem;
+
+                     position : absolute;
+                     top      : 60%;
+                     right    : -2.3rem;
+                     transform: translateY(-50%);
+
+                     transition: transform, position, .3s;
+                  }
+               }
+
+               .header__navigation--menu__dropdown {
+
+                  box-shadow: 0 0 50px var.$Shadow;
+
+                  height   : 0;
+                  min-width: 17rem;
+
+                  position: absolute;
+                  top     : 5rem;
+
+                  overflow  : hidden;
+                  transition: height, position, .3s;
+
+                  ul {
+
+                     background   : var.$White;
+                     border-radius: .5rem;
+
+                     display        : flex;
+                     flex-direction : column;
+                     justify-content: space-evenly;
+
+                     height: 100%;
+                     width : 100%;
+
+                     padding: 2rem;
+
+                     a {
+
+                        color    : var.$Black;
+                        font-size: 1.6rem;
+
+                        padding      : 1rem 100% 1rem 0;
+                        margin-bottom: .5rem;
+
+                        transition: opacity, font-weight, .3s ease;
+                        opacity   : .8;
+                     }
+                  }
+               }
+
+               .dropdown-one {
+
+                  left: -5rem;
+               }
+
+               .dropdown-two {
+                  left: -4.2rem;
+               }
+
+               .dropdown-three {
+                  left: -4.8rem;
+               }
+
+               &:hover {
+
+                  >a {
+
+                     opacity        : 1;
+                     text-decoration: underline;
+
+                     &:after {
+                        top      : -10%;
+                        transform: rotate(-180deg);
+                     }
+                  }
+
+                  .header__navigation--menu__dropdown {
+
+                     top: 7rem;
+
+                     ul {
+                        a:hover {
+
+                           opacity    : 1;
+                           font-weight: 700;
+                        }
+                     }
+                  }
+
+                  .dropdown-one {
+
+                     height: 21rem;
+                  }
+
+                  .dropdown-two {
+
+                     height: 18rem;
+                  }
+
+                  .dropdown-three {
+
+                     height: 15rem;
+                  }
+
+               }
+            }
+
+            >li+li {
+
+               margin-left: 5rem;
+            }
+         }
+
+         .header__navigation--auth-options {
+
+            display: flex;
+
+            a {
+
+               @include var.Default-button;
+
+               font-size: 1.6rem;
+
+               padding: 1.5rem 3.5rem;
+
+               &:hover {
+
+                  @include var.Light-red-button;
+               }
+            }
+
+            a+a {
+
+               @include var.White-button;
+            }
+         }
+      }
+   }
+
+   .header__content {
+
+      color: var.$White;
+      @include var.Overpass-font;
+
+      display        : flex;
+      flex-direction : column;
+      align-items    : center;
+      justify-content: center;
+
+      height: 100%;
+      width : 100%;
+
+      h2 {
+
+         font-size    : 6rem;
+         margin-bottom: 1.5rem;
+      }
+
+      br {
+
+         display: none;
+      }
+
+      span {
+
+         color      : #fffa;
+         font-weight: 400;
+      }
+
+      .CTA__buttons {
+
+         display   : flex;
+         margin-top: 4.5rem;
+
+         a {
+
+            @include var.Default-button;
+            @include var.White-button;
+
+            padding    : 1.2rem 2.4rem;
+            padding-top: 1.5rem;
+            font-weight: 900;
+
+            &:hover {
+
+               @include var.Light-red-button;
+            }
+         }
+
+         a+a {
+
+            border    : solid 1px var.$White;
+            color     : var.$White;
+            Background: none;
+
+            &:hover {
+
+               @include var.White-button;
+            }
+         }
+      }
+   }
+}
+
+@media only screen and (max-width:1100px) {
+
+   header#header {
+
+      .header--wrapper-content {
+
+         padding: 4rem 5rem !important;
+      }
+   }
+}

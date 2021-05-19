@@ -1,4 +1,0 @@
-- main >
-	- header
-	- content
-	- footer

@@ -1,0 +1,35 @@
+   @use '../colors'as var;
+
+   @mixin White-button {
+
+      margin-left: 1rem;
+
+      background: var.$White;
+      color     : var.$Light-red;
+
+      font-weight: 700;
+   }
+
+   @mixin Light-red-button {
+
+      background: var.$Very-light-red;
+      color     : var.$White;
+   }
+
+   @mixin Default-button {
+
+      border-radius: 3rem;
+      color        : #fff;
+      font-size    : 1.6rem;
+
+      margin: auto;
+
+      transition         : .3s;
+      transition-property: color, background, box, transform;
+
+      &:hover {
+
+         box-shadow: 0 10px 25px var.$Shadow;
+         transform : translateY(-5px);
+      }
+   }
