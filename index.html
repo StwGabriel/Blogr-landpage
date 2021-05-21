@@ -2,18 +2,19 @@
 <html lang="en">
 
 <head>
-  <!--  -->
+  <!---->
   <meta charset="UTF-8">
   <link rel="stylesheet" href="src/css/app.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
-    rel="stylesheet"> <!-- Overpass and Ubuntu import-->
-  <!--  -->
+    rel="stylesheet">
+  <!-- Overpass and Ubuntu import -->
+  <!---->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" sizes="32x32" href="src/assets/favicon-32x32.png">
 
-  <!--  -->
+  <!---->
   <title>Blogr | A modern publishing platform</title>
 
   <style>
@@ -33,84 +34,85 @@
   <div id="app">
 
     <header id="header">
-      <div class="header--wrapper">
-        <div class="header--wrapper-content">
+      <div class="header-wrapper">
+        <div class="header-wrapper__content">
 
-          <section class="header__navigation">
+          <section class="header__menu">
 
-            <h1 id="header__navigation--logo">
+            <h1 id="header__logo">
               <img src="src/assets/logo.svg" alt="Blogr Logo">
             </h1>
 
-            <div class="header__navigation--menu">
+            <div class="header__navigation">
 
-              <div>
-                <ul class="header__navigation--menu-options">
+              <ul class="header__options">
 
-                  <li>
+                <li>
 
-                    <a> Product </a>
-                    <div class="header__navigation--menu__dropdown dropdown-one">
-                      <ul>
-                        <li><a href="#"> Overview </a></li>
-                        <li><a href="#"> Pricing </a></li>
-                        <li><a href="#"> Marketplace </a></li>
-                        <li><a href="#"> Features </a></li>
-                        <li><a href="#"> Integrations </a></li>
-                      </ul>
-                    </div>
+                  <a> Product </a>
+                  <div class="header__dropdown dropdown-one">
+                    <ul>
+                      <li><a href="#"> Overview </a></li>
+                      <li><a href="#"> Pricing </a></li>
+                      <li><a href="#"> Marketplace </a></li>
+                      <li><a href="#"> Features </a></li>
+                      <li><a href="#"> Integrations </a></li>
+                    </ul>
+                  </div>
 
-                  </li>
+                </li>
 
-                  <li>
-                    <a> Company </a>
-                    <div class="header__navigation--menu__dropdown dropdown-two">
-                      <ul>
-                        <li><a href="#"> About </a></li>
-                        <li><a href="#"> Team </a></li>
-                        <li><a href="#"> Blog </a></li>
-                        <li><a href="#"> Careers </a></li>
-                      </ul>
-                    </div>
-                  </li>
+                <li>
 
-                  <li>
-                    <a> Connect </a>
+                  <a> Company </a>
+                  <div class="header__dropdown dropdown-two">
+                    <ul>
+                      <li><a href="#"> About </a></li>
+                      <li><a href="#"> Team </a></li>
+                      <li><a href="#"> Blog </a></li>
+                      <li><a href="#"> Careers </a></li>
+                    </ul>
+                  </div>
 
-                    <div class="header__navigation--menu__dropdown dropdown-three">
-                      <ul>
-                        <li><a href="#"> Contact </a></li>
-                        <li><a href="#"> Newsletter </a></li>
-                        <li><a href="#"> LinkedIn </a></li>
-                      </ul>
-                    </div>
+                </li>
 
+                <li>
 
-                  </li>
+                  <a> Connect </a>
+                  <div class="header__dropdown dropdown-three">
+                    <ul>
+                      <li><a href="#"> Contact </a></li>
+                      <li><a href="#"> Newsletter </a></li>
+                      <li><a href="#"> LinkedIn </a></li>
+                    </ul>
+                  </div>
 
-                </ul>
-              </div>
+                </li>
 
-              <div class="header__navigation--auth-options">
-                <a href="#"> Login </a>
+              </ul>
 
+              <div class="header__auth-options">
 
-                <a href="#"> Sign Up </a>
+                <a> Login </a>
+                <a> Sign Up </a>
+
               </div>
 
             </div>
 
-            <button title="Menu button" class="closeButton" id="menuButton" onclick="animateAndOpen()"></button>
+            <button title="Mobile Menu" id="menu__button" onclick="animateAndOpen()"></button>
 
           </section>
 
           <section class="header__content">
+
             <h2> A modern <br> publishing platform </h2>
             <span> Grow your audience and build your online brand </span>
             <div class="CTA__buttons">
               <a href=""> Start for Free </a>
               <a href=""> Learn More </a>
             </div>
+
           </section>
 
         </div>
@@ -174,70 +176,22 @@
 
   </script>
 
-  <!-- 
-  
-    
-    
+  <!--- State of the Art Infrastructure With reliability and speed in mind, worldwide data centers provide the backbone
+    for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping
+    your site competitive. Free, open, simple Blogr is a free and open source application backed by a large community of
+    helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration,
+    third-party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is
+    relatively easy to learn. Powerful tooling Batteries included. We built a simple and straightforward CLI tool that
+    makes customization and deployment a breeze, but capable of producing even the most complicated sites. Product
+    Overview Pricing Marketplace Features Integrations Company About Team Blog Careers Connect Contact Newsletter
+    LinkedIn -->
 
-  
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Gabriel Silva</a>.
+    </div>
 
-
-
-
-
-  Designed for the future
-
-  Introducing an extensible editor
-  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-  change the looks of a blog.
-
-  Robust content management
-  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
-
-  State of the Art Infrastructure
-  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
-
-  Free, open, simple
-  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
-
-  Powerful tooling
-  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-  capable of producing even the most complicated sites.
-
-  Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-  
-  Contact
-  Newsletter
-  LinkedIn 
--->
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Gabriel Silva</a>.
-  </div>
-
-  <script src="src/js/mobile-menu.js"></script>
+    <script src="src/js/mobile-menu.js"></script>
 </body>
 
 </html>
