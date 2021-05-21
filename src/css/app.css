@@ -382,6 +382,9 @@ header#header .header__content .CTA__buttons a + a:hover {
     left: 5%;
     transition: 0.3s;
   }
+  header#header .header__content {
+    text-align: center;
+  }
   header#header .header__content h2 {
     font-size: clamp(3rem, 15vw, 5rem);
     margin-bottom: 1.5rem;
