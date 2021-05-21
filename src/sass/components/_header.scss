@@ -14,7 +14,7 @@ header#header {
 
       background         : url(../assets/bg-pattern-intro.svg) 220% no-repeat;
       background-position: -43.5rem -133.8rem; // X Y
-      filter             : drop-shadow(-10px 0 20px var.$Shadow);
+      filter             : drop-shadow(-1rem 0 2rem var.$Shadow);
 
       border-radius: 0 0 0 10rem;
       height       : 100%;
@@ -27,7 +27,7 @@ header#header {
          height: 100%;
          width : min(144rem, 100%);
 
-         padding: 4.6rem 16.5rem;
+         padding: 6rem 16.5rem;
          margin : 0 auto;
       }
    }
@@ -41,8 +41,8 @@ header#header {
 
       display: flex;
 
-      width       : 11.9rem;
-      margin-right: 6.5rem;
+      width       : 11.7rem;
+      margin-right: 5rem;
 
       img {
 
@@ -65,11 +65,11 @@ header#header {
       display    : flex;
       align-items: center;
 
-      height: 100%;
+      min-height: 100%;
 
       >li {
 
-         padding : 2.5rem .3rem 2.5rem 0;
+         padding : 1.6rem 1.8rem 1.4rem 1.8rem;
          position: relative;
 
          >a {
@@ -90,8 +90,8 @@ header#header {
 
                display: block;
 
-               width : 2rem;
-               height: 2rem;
+               width     : 2rem;
+               min-height: 2rem;
 
                position : absolute;
                top      : 60%;
@@ -104,7 +104,7 @@ header#header {
 
          .header__navigation--menu__dropdown {
 
-            box-shadow: 0 0 50px var.$Shadow;
+            box-shadow: 0 0 5rem var.$Shadow;
 
             height   : 0;
             min-width: 17rem;
@@ -124,8 +124,8 @@ header#header {
                flex-direction : column;
                justify-content: space-evenly;
 
-               height: 100%;
-               width : 100%;
+               min-height: 100%;
+               width     : 100%;
 
                padding: 2rem;
 
@@ -145,15 +145,15 @@ header#header {
 
          .dropdown-one {
 
-            left: -5rem;
+            left: -2.5rem;
          }
 
          .dropdown-two {
-            left: -4.2rem;
+            left: -1.6rem;
          }
 
          .dropdown-three {
-            left: -4.8rem;
+            left: -1.6rem;
          }
 
          &:hover {
@@ -202,7 +202,7 @@ header#header {
 
       >li+li {
 
-         margin-left: 5rem;
+         padding-left: 3rem;
       }
    }
 
@@ -286,7 +286,7 @@ header#header {
 
          a+a {
 
-            border    : solid 1px var.$White;
+            border    : solid .1rem var.$White;
             color     : var.$White;
             Background: none;
 
@@ -335,7 +335,6 @@ header#header {
 
          background-size    : 400%;
          background-position: -100vw -140vw; // X Y
-         filter             : drop-shadow(-10px 0 30px var.$Shadow);
 
          .header--wrapper-content {
 
@@ -359,7 +358,7 @@ header#header {
 
          padding: 2rem 1rem;
 
-         width: min(90%, 500px);
+         width: min(90%, 50rem);
 
          transition         : .2s;
          transition-property: top, opacity, visibility;
@@ -397,11 +396,11 @@ header#header {
 
                * {
                   top: 0;
-
                }
 
                a {
                   text-decoration: none;
+
                }
             }
 
@@ -416,7 +415,7 @@ header#header {
 
                   background: #0001;
                   padding   : 3rem;
-                  height    : 100%;
+                  min-height: 100%;
                }
 
                li {
@@ -436,7 +435,7 @@ header#header {
 
          li+li {
 
-            margin: 0;
+            padding-left: 0;
          }
       }
 
@@ -467,7 +466,7 @@ header#header {
             &:hover {
 
                background: var.$White;
-               border    : solid 1px var.$Very-light-red;
+               border    : solid .1rem var.$Very-light-red;
                color     : var.$Black;
             }
          }
@@ -479,9 +478,9 @@ header#header {
 
          display: block;
 
-         border: none;
-         width : 4.5rem;
-         height: 4.5rem;
+         border    : none;
+         width     : 4.5rem;
+         min-height: 4.5rem;
 
          position: absolute;
          top     : 6rem;
@@ -497,8 +496,8 @@ header#header {
             background   : #fff;
             border-radius: .5rem;
 
-            width : 4rem;
-            height: .5rem;
+            width     : 4rem;
+            min-height: .5rem;
 
             position: absolute;
             top     : 30%;
@@ -514,8 +513,8 @@ header#header {
             background   : #fff;
             border-radius: .5rem;
 
-            width : 4rem;
-            height: .5rem;
+            width     : 4rem;
+            min-height: .5rem;
 
             position: absolute;
             bottom  : 30%;
@@ -529,7 +528,7 @@ header#header {
 
          h2 {
 
-            font-size    : clamp(3rem, 20vw, 5rem);
+            font-size    : clamp(3rem, 15vw, 5rem);
             margin-bottom: 1.5rem;
          }
 
@@ -568,6 +567,37 @@ header#header {
 
                bottom: 45%;
                left  : 4%;
+            }
+         }
+      }
+   }
+}
+
+@media only screen and (max-width:350px) {
+
+   header#header {
+
+      .header--wrapper {
+
+         .header--wrapper-content {
+
+            padding: 4rem 2rem;
+         }
+      }
+
+      button#menuButton {
+         top: 4rem;
+      }
+
+      .header__content {
+         .CTA__buttons {
+
+            flex-direction: column;
+            margin-top    : 2rem;
+
+            a {
+
+               margin: .5rem auto;
             }
          }
       }

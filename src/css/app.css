@@ -37,7 +37,7 @@ header#header {
 header#header .header--wrapper {
   background: url(../assets/bg-pattern-intro.svg) 220% no-repeat;
   background-position: -43.5rem -133.8rem;
-  filter: drop-shadow(-10px 0 20px rgba(0, 0, 0, 0.05));
+  filter: drop-shadow(-1rem 0 2rem rgba(0, 0, 0, 0.05));
   border-radius: 0 0 0 10rem;
   height: 100%;
 }
@@ -46,7 +46,7 @@ header#header .header--wrapper .header--wrapper-content {
   flex-direction: column;
   height: 100%;
   width: min(144rem, 100%);
-  padding: 4.6rem 16.5rem;
+  padding: 6rem 16.5rem;
   margin: 0 auto;
 }
 header#header .header__navigation {
@@ -54,8 +54,8 @@ header#header .header__navigation {
 }
 header#header #header__navigation--logo {
   display: flex;
-  width: 11.9rem;
-  margin-right: 6.5rem;
+  width: 11.7rem;
+  margin-right: 5rem;
 }
 header#header #header__navigation--logo img {
   width: 100%;
@@ -69,10 +69,10 @@ header#header .header__navigation--menu {
 header#header .header__navigation--menu-options {
   display: flex;
   align-items: center;
-  height: 100%;
+  min-height: 100%;
 }
 header#header .header__navigation--menu-options > li {
-  padding: 2.5rem 0.3rem 2.5rem 0;
+  padding: 1.6rem 1.8rem 1.4rem 1.8rem;
   position: relative;
 }
 header#header .header__navigation--menu-options > li > a {
@@ -87,7 +87,7 @@ header#header .header__navigation--menu-options > li > a::after {
   background: url(../assets/icon-arrow-light.svg) center no-repeat;
   display: block;
   width: 2rem;
-  height: 2rem;
+  min-height: 2rem;
   position: absolute;
   top: 60%;
   right: -2.3rem;
@@ -95,7 +95,7 @@ header#header .header__navigation--menu-options > li > a::after {
   transition: transform, position, 0.3s;
 }
 header#header .header__navigation--menu-options > li .header__navigation--menu__dropdown {
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 5rem rgba(0, 0, 0, 0.05);
   height: 0;
   min-width: 17rem;
   position: absolute;
@@ -109,7 +109,7 @@ header#header .header__navigation--menu-options > li .header__navigation--menu__
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   padding: 2rem;
 }
@@ -122,13 +122,13 @@ header#header .header__navigation--menu-options > li .header__navigation--menu__
   opacity: 0.8;
 }
 header#header .header__navigation--menu-options > li .dropdown-one {
-  left: -5rem;
+  left: -2.5rem;
 }
 header#header .header__navigation--menu-options > li .dropdown-two {
-  left: -4.2rem;
+  left: -1.6rem;
 }
 header#header .header__navigation--menu-options > li .dropdown-three {
-  left: -4.8rem;
+  left: -1.6rem;
 }
 header#header .header__navigation--menu-options > li:hover > a {
   opacity: 1;
@@ -155,7 +155,7 @@ header#header .header__navigation--menu-options > li:hover .dropdown-three {
   height: 15rem;
 }
 header#header .header__navigation--menu-options > li + li {
-  margin-left: 5rem;
+  padding-left: 3rem;
 }
 header#header button#menuButton {
   display: none;
@@ -237,7 +237,7 @@ header#header .header__content .CTA__buttons a:hover {
   color: white;
 }
 header#header .header__content .CTA__buttons a + a {
-  border: solid 1px white;
+  border: solid 0.1rem white;
   color: white;
   Background: none;
 }
@@ -262,7 +262,6 @@ header#header .header__content .CTA__buttons a + a:hover {
   header#header .header--wrapper {
     background-size: 400%;
     background-position: -100vw -140vw;
-    filter: drop-shadow(-10px 0 30px rgba(0, 0, 0, 0.05));
   }
   header#header .header--wrapper .header--wrapper-content {
     padding: 6rem clamp(1rem, 5vw, 10rem);
@@ -276,7 +275,7 @@ header#header .header__content .CTA__buttons a + a:hover {
     left: 50%;
     transform: translateX(-50%);
     padding: 2rem 1rem;
-    width: min(90%, 500px);
+    width: min(90%, 50rem);
     transition: 0.2s;
     transition-property: top, opacity, visibility;
     top: 8rem;
@@ -315,7 +314,7 @@ header#header .header__content .CTA__buttons a + a:hover {
   header#header .header__navigation--menu-options > li .header__navigation--menu__dropdown ul {
     background: #0001;
     padding: 3rem;
-    height: 100%;
+    min-height: 100%;
   }
   header#header .header__navigation--menu-options > li .header__navigation--menu__dropdown li {
     display: flex;
@@ -326,7 +325,7 @@ header#header .header__content .CTA__buttons a + a:hover {
     width: 100%;
   }
   header#header .header__navigation--menu-options li + li {
-    margin: 0;
+    padding-left: 0;
   }
   header#header .header__navigation--auth-options {
     flex-direction: column;
@@ -347,7 +346,7 @@ header#header .header__content .CTA__buttons a + a:hover {
   }
   header#header .header__navigation--auth-options a + a:hover {
     background: white;
-    border: solid 1px #ff7a85;
+    border: solid 0.1rem #ff7a85;
     color: black;
   }
   header#header button#menuButton {
@@ -355,7 +354,7 @@ header#header .header__content .CTA__buttons a + a:hover {
     display: block;
     border: none;
     width: 4.5rem;
-    height: 4.5rem;
+    min-height: 4.5rem;
     position: absolute;
     top: 6rem;
     right: clamp(1rem, 5vw, 10rem);
@@ -366,7 +365,7 @@ header#header .header__content .CTA__buttons a + a:hover {
     background: #fff;
     border-radius: 0.5rem;
     width: 4rem;
-    height: 0.5rem;
+    min-height: 0.5rem;
     position: absolute;
     top: 30%;
     left: 5%;
@@ -377,14 +376,14 @@ header#header .header__content .CTA__buttons a + a:hover {
     background: #fff;
     border-radius: 0.5rem;
     width: 4rem;
-    height: 0.5rem;
+    min-height: 0.5rem;
     position: absolute;
     bottom: 30%;
     left: 5%;
     transition: 0.3s;
   }
   header#header .header__content h2 {
-    font-size: clamp(3rem, 20vw, 5rem);
+    font-size: clamp(3rem, 15vw, 5rem);
     margin-bottom: 1.5rem;
   }
   header#header .header__content br {
@@ -408,6 +407,21 @@ header#header .header__content .CTA__buttons a + a:hover {
     width: 4rem;
     bottom: 45%;
     left: 4%;
+  }
+}
+@media only screen and (max-width: 350px) {
+  header#header .header--wrapper .header--wrapper-content {
+    padding: 4rem 2rem;
+  }
+  header#header button#menuButton {
+    top: 4rem;
+  }
+  header#header .header__content .CTA__buttons {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  header#header .header__content .CTA__buttons a {
+    margin: 0.5rem auto;
   }
 }
 /**/
