@@ -11,7 +11,6 @@
 }
 
 body {
-  width: 144rem;
   background-color: #fff;
   margin: 0 auto;
 }
@@ -428,23 +427,18 @@ header#header .header__content .CTA__buttons a + a:hover {
     margin: 0.5rem auto;
   }
 }
-section#us-section {
+#us-one {
   overflow-x: hidden;
   padding-bottom: 20vw;
 }
-section#us-section .us-section-wrapper {
-  width: min(100%, 144rem);
-  margin: 0 auto;
-  overflow: visible;
-}
-section#us-section #us-one {
+#us-one .us-one-wrapper {
   display: grid;
   grid-template-areas: "title title" "content image";
-  width: 100%;
+  width: min(144rem, 100%);
   padding: 15.5rem 0 0 0;
   overflow: visible;
 }
-section#us-section #us-one .us-one__title {
+#us-one .us-one__title {
   grid-area: title;
   font-family: "Overpass", sans-serif;
   font-weight: 650;
@@ -454,29 +448,28 @@ section#us-section #us-one .us-one__title {
   margin: 0 auto;
   margin-bottom: 10.8rem;
 }
-section#us-section #us-one .us-one__image-box {
+#us-one .us-one__image-box {
   grid-area: image;
   display: flex;
   align-items: center;
-  width: max(40vw, 70rem);
-  max-width: 90rem;
+  width: max(42.1vw, 50rem);
   height: 40rem;
   filter: drop-shadow(0 0 50px #0002);
-  margin-right: -5rem;
+  margin-right: 1rem;
   overflow: visible;
 }
-section#us-section #us-one .us-one__content {
+#us-one .us-one__content {
   grid-area: content;
   font-family: "Overpass", sans-serif;
   font-weight: 650;
   margin: -0.5rem 8.8rem 0 16.5rem;
 }
-section#us-section #us-one .us-one__content h3 {
+#us-one .us-one__content h3 {
   color: #1f3f5b;
   font-size: 2.8rem;
   margin-bottom: 2.5rem;
 }
-section#us-section #us-one .us-one__content p {
+#us-one .us-one__content p {
   color: #4b5862;
   font-size: max(16px, 1.612rem);
   font-weight: 600;
@@ -485,42 +478,43 @@ section#us-section #us-one .us-one__content p {
   letter-spacing: 0.02ch;
   margin-bottom: 7.5rem;
 }
-@media only screen and (max-width: 1100px) {
-  section#us-section #us-one .us-one__content {
-    margin: -0.5rem 0 0 5rem;
+
+@media only screen and (max-width: 1150px) {
+  #us-one .us-one__content {
+    margin: -0.5rem 0 0 4rem;
   }
-  section#us-section #us-one .us-one__content p {
+  #us-one .us-one__content p {
     font-size: max(14px, 1.4rem);
   }
 }
 @media only screen and (max-width: 850px) {
-  section#us-section #us-one {
+  #us-one .us-one-wrapper {
     grid-template-areas: "title" "image" "content";
     place-items: center;
   }
-  section#us-section #us-one .us-one__title {
+  #us-one .us-one__title {
     padding: 0 0 5rem 0;
     margin: 0;
     font-size: clamp(28px, 9vw, 4rem);
   }
-  section#us-section #us-one .us-one__image-box {
+  #us-one .us-one__image-box {
     width: 100%;
     max-width: none;
     height: auto;
     margin-bottom: 5rem;
   }
-  section#us-section #us-one .us-one__image-box img {
+  #us-one .us-one__image-box img {
     width: min(60rem, 100%);
     margin: 0 auto;
   }
-  section#us-section #us-one .us-one__content {
+  #us-one .us-one__content {
     padding: 3rem;
     margin: 0;
   }
-  section#us-section #us-one .us-one__content h3 {
+  #us-one .us-one__content h3 {
     font-size: 3rem;
   }
-  section#us-section #us-one .us-one__content p {
+  #us-one .us-one__content p {
     font-size: 2rem;
   }
 }

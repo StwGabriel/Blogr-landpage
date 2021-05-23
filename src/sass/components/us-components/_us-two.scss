@@ -1,4 +1,8 @@
-@mixin us-two {
+@use '../../abstracts/'as var;
 
-   #us-two {}
+
+
+#us-two {
+
+   .us-two-wrapper {}
 }
