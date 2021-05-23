@@ -22,10 +22,11 @@
 
          @include var.Overpass-font;
 
-         color     : var.$Very-dark-blue;
-         font-size : 3.8rem;
-         text-align: center;
+         color    : var.$Very-dark-blue;
+         font-size: 3.9rem;
+         letter-spacing: -0.03ch;
 
+         margin       : 0 auto;
          margin-bottom: 10.8rem;
       }
 
@@ -36,19 +37,14 @@
          display    : flex;
          align-items: center;
 
-         min-width: 40vw;
-         max-width: 50vw;
+         width    : max(40vw, 70rem);
+         max-width: 90rem;
          height   : 40rem;
 
-         overflow: visible;
+         filter: drop-shadow(0 0 50px #0002);
 
-         img {
-
-            width : 150%;
-            height: auto;
-
-            margin-right: -27.5rem;
-         }
+         margin-right: -5rem;
+         overflow    : visible;
       }
 
       .us-one__content {
@@ -57,7 +53,7 @@
 
          @include var.Overpass-font;
 
-         margin: -.5rem 9.1rem 0 16.5rem;
+         margin: -.5rem 8.8rem 0 16.5rem;
 
          h3 {
 
@@ -69,13 +65,14 @@
 
          p {
 
-            color       : var.$Very-dark-grayish-blue;
-            font-size   : max(16px, 1.6rem);
-            font-weight : 600;
-            line-height : 2.8ch;
-            word-spacing: .3ch;
+            color         : var.$Very-dark-grayish-blue;
+            font-size     : max(16px, 1.612rem);
+            font-weight   : 600;
+            line-height   : 2.7ch;
+            word-spacing  : .06ch;
+            letter-spacing: .02ch;
 
-            margin-bottom: 7rem;
+            margin-bottom: 7.5rem;
          }
       }
    }

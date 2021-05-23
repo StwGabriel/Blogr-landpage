@@ -11,6 +11,7 @@
 }
 
 body {
+  width: 144rem;
   background-color: #fff;
   margin: 0 auto;
 }
@@ -448,29 +449,27 @@ section#us-section #us-one .us-one__title {
   font-family: "Overpass", sans-serif;
   font-weight: 650;
   color: #1f3f5b;
-  font-size: 3.8rem;
-  text-align: center;
+  font-size: 3.9rem;
+  letter-spacing: -0.03ch;
+  margin: 0 auto;
   margin-bottom: 10.8rem;
 }
 section#us-section #us-one .us-one__image-box {
   grid-area: image;
   display: flex;
   align-items: center;
-  min-width: 40vw;
-  max-width: 50vw;
+  width: max(40vw, 70rem);
+  max-width: 90rem;
   height: 40rem;
+  filter: drop-shadow(0 0 50px #0002);
+  margin-right: -5rem;
   overflow: visible;
-}
-section#us-section #us-one .us-one__image-box img {
-  width: 150%;
-  height: auto;
-  margin-right: -27.5rem;
 }
 section#us-section #us-one .us-one__content {
   grid-area: content;
   font-family: "Overpass", sans-serif;
   font-weight: 650;
-  margin: -0.5rem 9.1rem 0 16.5rem;
+  margin: -0.5rem 8.8rem 0 16.5rem;
 }
 section#us-section #us-one .us-one__content h3 {
   color: #1f3f5b;
@@ -479,11 +478,12 @@ section#us-section #us-one .us-one__content h3 {
 }
 section#us-section #us-one .us-one__content p {
   color: #4b5862;
-  font-size: max(16px, 1.6rem);
+  font-size: max(16px, 1.612rem);
   font-weight: 600;
-  line-height: 2.8ch;
-  word-spacing: 0.3ch;
-  margin-bottom: 7rem;
+  line-height: 2.7ch;
+  word-spacing: 0.06ch;
+  letter-spacing: 0.02ch;
+  margin-bottom: 7.5rem;
 }
 @media only screen and (max-width: 1100px) {
   section#us-section #us-one .us-one__content {
