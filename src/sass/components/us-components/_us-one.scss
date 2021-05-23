@@ -1,0 +1,149 @@
+@use '../../abstracts/'as var;
+
+@mixin us-one {
+
+   #us-one {
+
+      display: grid;
+      grid-template-areas:
+         'title title'
+         'content image'
+      ;
+
+      width: 100%;
+
+      padding: 15.5rem 0 0 0;
+
+      overflow: visible;
+
+      .us-one__title {
+
+         grid-area: title;
+
+         @include var.Overpass-font;
+
+         color     : var.$Very-dark-blue;
+         font-size : 3.8rem;
+         text-align: center;
+
+         margin-bottom: 10.8rem;
+      }
+
+      .us-one__image-box {
+
+         grid-area: image;
+
+         display    : flex;
+         align-items: center;
+
+         min-width: 40vw;
+         max-width: 50vw;
+         height   : 40rem;
+
+         overflow: visible;
+
+         img {
+
+            width : 150%;
+            height: auto;
+
+            margin-right: -27.5rem;
+         }
+      }
+
+      .us-one__content {
+
+         grid-area: content;
+
+         @include var.Overpass-font;
+
+         margin: -.5rem 9.1rem 0 16.5rem;
+
+         h3 {
+
+            color    : var.$Very-dark-blue;
+            font-size: 2.8rem;
+
+            margin-bottom: 2.5rem;
+         }
+
+         p {
+
+            color       : var.$Very-dark-grayish-blue;
+            font-size   : max(16px, 1.6rem);
+            font-weight : 600;
+            line-height : 2.8ch;
+            word-spacing: .3ch;
+
+            margin-bottom: 7rem;
+         }
+      }
+   }
+
+   @media only screen and (max-width: 1100px) {
+
+      #us-one {
+
+         .us-one__content {
+
+            margin: -.5rem 0 0 5rem;
+
+            p {
+
+               font-size: max(14px, 1.4rem);
+            }
+         }
+      }
+   }
+
+   @media only screen and (max-width: 850px) {
+
+      #us-one {
+
+         grid-template-areas:
+            'title'
+            'image'
+            'content'
+         ;
+         place-items: center;
+
+         .us-one__title {
+
+            padding: 0 0 5rem 0;
+            margin : 0;
+
+            font-size: clamp(28px, 9vw, 4rem);
+         }
+
+         .us-one__image-box {
+
+            width        : 100%;
+            max-width    : none;
+            height       : auto;
+            margin-bottom: 5rem;
+
+            img {
+
+               width: min(60rem, 100%);
+
+               margin: 0 auto;
+            }
+         }
+
+         .us-one__content {
+
+            padding: 3rem;
+            margin : 0;
+
+            h3 {
+
+               font-size: 3rem;
+            }
+
+            p {
+               font-size: 2rem;
+            }
+         }
+      }
+   }
+}

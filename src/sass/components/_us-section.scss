@@ -1,0 +1,20 @@
+@use '../abstracts/'as var;
+@use 'us-components/'as us;
+
+section#us-section {
+
+   overflow-x    : hidden;
+   padding-bottom: 20vw;
+
+   .us-section-wrapper {
+
+      width   : min(100%, 144rem);
+      margin: 0 auto;
+      overflow: visible;
+   }
+
+   @include us.us-one;
+   @include us.us-two;
+   @include us.us-three;
+
+}

@@ -190,7 +190,7 @@ header#header .header__auth-options a + a {
 header#header .header__content {
   color: white;
   font-family: "Overpass", sans-serif;
-  font-weight: 600;
+  font-weight: 650;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -427,6 +427,105 @@ header#header .header__content .CTA__buttons a + a:hover {
     margin: 0.5rem auto;
   }
 }
+section#us-section {
+  overflow-x: hidden;
+  padding-bottom: 20vw;
+}
+section#us-section .us-section-wrapper {
+  width: min(100%, 144rem);
+  margin: 0 auto;
+  overflow: visible;
+}
+section#us-section #us-one {
+  display: grid;
+  grid-template-areas: "title title" "content image";
+  width: 100%;
+  padding: 15.5rem 0 0 0;
+  overflow: visible;
+}
+section#us-section #us-one .us-one__title {
+  grid-area: title;
+  font-family: "Overpass", sans-serif;
+  font-weight: 650;
+  color: #1f3f5b;
+  font-size: 3.8rem;
+  text-align: center;
+  margin-bottom: 10.8rem;
+}
+section#us-section #us-one .us-one__image-box {
+  grid-area: image;
+  display: flex;
+  align-items: center;
+  min-width: 40vw;
+  max-width: 50vw;
+  height: 40rem;
+  overflow: visible;
+}
+section#us-section #us-one .us-one__image-box img {
+  width: 150%;
+  height: auto;
+  margin-right: -27.5rem;
+}
+section#us-section #us-one .us-one__content {
+  grid-area: content;
+  font-family: "Overpass", sans-serif;
+  font-weight: 650;
+  margin: -0.5rem 9.1rem 0 16.5rem;
+}
+section#us-section #us-one .us-one__content h3 {
+  color: #1f3f5b;
+  font-size: 2.8rem;
+  margin-bottom: 2.5rem;
+}
+section#us-section #us-one .us-one__content p {
+  color: #4b5862;
+  font-size: max(16px, 1.6rem);
+  font-weight: 600;
+  line-height: 2.8ch;
+  word-spacing: 0.3ch;
+  margin-bottom: 7rem;
+}
+@media only screen and (max-width: 1100px) {
+  section#us-section #us-one .us-one__content {
+    margin: -0.5rem 0 0 5rem;
+  }
+  section#us-section #us-one .us-one__content p {
+    font-size: max(14px, 1.4rem);
+  }
+}
+@media only screen and (max-width: 850px) {
+  section#us-section #us-one {
+    grid-template-areas: "title" "image" "content";
+    place-items: center;
+  }
+  section#us-section #us-one .us-one__title {
+    padding: 0 0 5rem 0;
+    margin: 0;
+    font-size: clamp(28px, 9vw, 4rem);
+  }
+  section#us-section #us-one .us-one__image-box {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    margin-bottom: 5rem;
+  }
+  section#us-section #us-one .us-one__image-box img {
+    width: min(60rem, 100%);
+    margin: 0 auto;
+  }
+  section#us-section #us-one .us-one__content {
+    padding: 3rem;
+    margin: 0;
+  }
+  section#us-section #us-one .us-one__content h3 {
+    font-size: 3rem;
+  }
+  section#us-section #us-one .us-one__content p {
+    font-size: 2rem;
+  }
+}
+/**/
+/**/
 /**/
 
 /*# sourceMappingURL=app.css.map */
