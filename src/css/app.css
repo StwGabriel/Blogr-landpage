@@ -493,7 +493,7 @@ header#header .header__content .CTA__buttons a + a:hover {
     place-items: center;
   }
   #us-one .us-one__title {
-    padding: 0 0 5rem 0;
+    padding: 0 2rem 5rem 2rem;
     margin: 0;
     font-size: clamp(28px, 9vw, 4rem);
   }
@@ -518,8 +518,79 @@ header#header .header__content .CTA__buttons a + a:hover {
     font-size: 2rem;
   }
 }
-/**/
-/**/
-/**/
+#us-two {
+  background: linear-gradient(to right, #2c2d3f, #3f4164);
+  border-radius: 0 10rem 0 10rem;
+  margin: clamp(-12.2rem, -10vw, 30rem) 0 5rem 0;
+}
+#us-two .us-two-wrapper {
+  background: url(../assets/bg-pattern-circles.svg) no-repeat -21rem -50rem;
+  background-size: 70%;
+  border-radius: 0 10rem 0 10rem;
+  display: flex;
+  width: min(144rem, 100%);
+  padding: 3rem 12.5rem 0 12.5rem;
+}
+#us-two .us-two__image {
+  height: 38rem;
+  display: flex;
+  place-items: center;
+  margin-bottom: -1rem;
+}
+#us-two .us-two__content {
+  font-family: "Overpass", sans-serif;
+  font-weight: 650;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 5rem;
+  margin-left: 1rem;
+}
+#us-two .us-two__content h2 {
+  font-size: 3.8rem;
+  margin: -1rem 0 2rem 0;
+}
+#us-two .us-two__content p {
+  color: #c8c8cb;
+  font-weight: 400;
+  font-size: max(16px, 1.7rem);
+  line-height: 2.5ch;
+  word-spacing: 0.01ch;
+  padding-right: 0.5rem;
+}
+
+@media only screen and (max-width: 1300px) {
+  #us-two .us-two-wrapper {
+    padding: 2rem;
+  }
+  #us-two .us-two__content {
+    padding: 0 2rem;
+  }
+}
+@media only screen and (max-width: 950px) {
+  #us-two {
+    overflow-y: visible;
+  }
+  #us-two .us-two-wrapper {
+    flex-direction: column;
+    margin-top: 10rem;
+  }
+  #us-two .us-two__image {
+    margin: -15rem 0 clamp(2rem, 10vw, 12rem) 0;
+    width: 100%;
+  }
+  #us-two .us-two__image img {
+    width: min(50rem, 100%);
+    margin: 0 auto;
+  }
+  #us-two .us-two__content {
+    padding: 0;
+    padding-bottom: 10rem;
+  }
+  #us-two .us-two__content h2 {
+    font-size: 3rem;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */
