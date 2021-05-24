@@ -11,6 +11,7 @@
 }
 
 body {
+  width: 144rem;
   background-color: #fff;
   margin: 0 auto;
 }
@@ -433,15 +434,15 @@ header#header .header__content .CTA__buttons a + a:hover {
 }
 #us-one .us-one-wrapper {
   display: grid;
-  grid-template-areas: "title title" "content image";
   width: min(144rem, 100%);
   padding: 15.5rem 0 0 0;
   overflow: visible;
+  grid-template-areas: "title title" "content image";
 }
 #us-one .us-one__title {
-  grid-area: title;
   font-family: "Overpass", sans-serif;
   font-weight: 650;
+  grid-area: title;
   color: #1f3f5b;
   font-size: 3.9rem;
   letter-spacing: -0.03ch;
@@ -452,16 +453,16 @@ header#header .header__content .CTA__buttons a + a:hover {
   grid-area: image;
   display: flex;
   align-items: center;
-  width: max(42.1vw, 50rem);
-  height: 40rem;
   filter: drop-shadow(0 0 50px #0002);
+  height: 40rem;
   margin-right: 1rem;
   overflow: visible;
+  width: max(42.1vw, 50rem);
 }
 #us-one .us-one__content {
-  grid-area: content;
   font-family: "Overpass", sans-serif;
   font-weight: 650;
+  grid-area: content;
   margin: -0.5rem 8.8rem 0 16.5rem;
 }
 #us-one .us-one__content h3 {
@@ -487,7 +488,7 @@ header#header .header__content .CTA__buttons a + a:hover {
     font-size: max(14px, 1.4rem);
   }
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 900px) {
   #us-one .us-one-wrapper {
     grid-template-areas: "title" "image" "content";
     place-items: center;
@@ -590,6 +591,99 @@ header#header .header__content .CTA__buttons a + a:hover {
   }
   #us-two .us-two__content h2 {
     font-size: 3rem;
+  }
+}
+#us-three {
+  margin-top: 5.5rem;
+  overflow-x: hidden;
+  padding: 10rem 0 20vw 0;
+}
+#us-three .us-three-wrapper {
+  display: grid;
+  width: min(144rem, 100%);
+  padding: 15.5rem 0 0 0;
+  overflow: visible;
+  grid-template-areas: "image content";
+}
+#us-three .us-three__image-box {
+  grid-area: image;
+  display: flex;
+  align-items: center;
+  filter: drop-shadow(0 0 50px #0002);
+  height: 40rem;
+  margin-right: 1rem;
+  overflow: visible;
+  width: max(40vw, 50rem);
+  transform: translateX(-27.9rem);
+}
+#us-three .us-three__content {
+  margin: -0.5rem 11rem 0 11.8rem;
+  padding-right: 2rem;
+  font-family: "Overpass", sans-serif;
+  font-weight: 650;
+  grid-area: content;
+}
+#us-three .us-three__content h3 {
+  color: #1f3f5b;
+  font-size: 2.8rem;
+  margin-bottom: 2.5rem;
+}
+#us-three .us-three__content p {
+  color: #4b5862;
+  font-size: max(16px, 1.612rem);
+  font-weight: 600;
+  line-height: 2.7ch;
+  word-spacing: 0.06ch;
+  letter-spacing: 0.02ch;
+  margin-bottom: 7.5rem;
+}
+
+@media only screen and (min-width: 1400px) {
+  #us-three .us-three__content {
+    padding-right: 5rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  #us-three .us-three__image-box {
+    transform: translateX(-45rem);
+  }
+  #us-three .us-three__content {
+    margin: -0.5rem 0 0 -5rem;
+  }
+  #us-three .us-three__content p {
+    font-size: max(14px, 1.4rem);
+  }
+}
+@media only screen and (max-width: 900px) {
+  #us-three {
+    padding: 0;
+  }
+  #us-three .us-three-wrapper {
+    grid-template-areas: "image" "content";
+    place-items: center;
+    padding: 0;
+  }
+  #us-three .us-three__image-box {
+    transform: translateX(0);
+    width: 100%;
+    max-width: none;
+    height: auto;
+    margin-bottom: 5rem;
+  }
+  #us-three .us-three__image-box img {
+    width: min(60rem, 100%);
+    margin: 0 auto;
+  }
+  #us-three .us-three__content {
+    margin: 0;
+    padding: 3rem;
+    margin: 0;
+  }
+  #us-three .us-three__content h3 {
+    font-size: 3rem;
+  }
+  #us-three .us-three__content p {
+    font-size: 2rem;
   }
 }
 
