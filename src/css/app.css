@@ -11,7 +11,6 @@
 }
 
 body {
-  width: 144rem;
   background-color: #fff;
   margin: 0 auto;
 }
@@ -596,7 +595,6 @@ header#header .header__content .CTA__buttons a + a:hover {
 #us-three {
   margin-top: 5.5rem;
   overflow-x: hidden;
-  padding: 10rem 0 20vw 0;
 }
 #us-three .us-three-wrapper {
   display: grid;
@@ -604,6 +602,7 @@ header#header .header__content .CTA__buttons a + a:hover {
   padding: 15.5rem 0 0 0;
   overflow: visible;
   grid-template-areas: "image content";
+  padding: 10rem 0 15vw 0;
 }
 #us-three .us-three__image-box {
   grid-area: image;
@@ -684,6 +683,58 @@ header#header .header__content .CTA__buttons a + a:hover {
   }
   #us-three .us-three__content p {
     font-size: 2rem;
+  }
+}
+footer#footer {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  background: #25252d;
+  border-radius: 0 10rem 0 0;
+  color: white;
+  font-weight: 400;
+  margin-top: 4.6rem;
+}
+footer#footer .footer-wrapper {
+  width: min(144rem, 100%);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 7rem 16.5rem;
+}
+footer#footer h4 {
+  font-size: max(14px, 1.6rem);
+  font-weight: inherit;
+  margin: 1rem 0 3rem 1rem;
+}
+footer#footer li {
+  margin: 1.5rem 0;
+}
+footer#footer li a {
+  margin: 1rem 0 0 1rem;
+  font-size: max(14px, 1.4rem);
+  padding: 1rem 0;
+  opacity: 0.7;
+  transition: opacity, text, 0.3s;
+}
+footer#footer li a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 1150px) {
+  footer#footer .footer-wrapper {
+    padding: 7rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  footer#footer .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+  footer#footer .footer__logo {
+    height: 5rem;
   }
 }
 

@@ -1,0 +1,86 @@
+//
+@use '../abstracts/'as var;
+
+footer#footer {
+
+   @include var.Ubuntu-font;
+
+   background   : var.$Very-dark-black-blue;
+   border-radius: 0 10rem 0 0;
+
+   color      : var.$White;
+   font-weight: 400;
+
+   margin-top: 4.6rem;
+
+   .footer-wrapper {
+
+      width: min(144rem, 100%);
+
+      display              : grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      padding: 7rem 16.5rem;
+   }
+
+   h4 {
+
+      font-size  : max(14px, 1.6rem);
+      font-weight: inherit;
+      margin     : 1rem 0 3rem 1rem;
+   }
+
+   li {
+
+      margin: 1.5rem 0;
+
+      a {
+
+         margin   : 1rem 0 0 1rem;
+         font-size: max(14px, 1.4rem);
+         padding  : 1rem 0;
+
+         opacity   : .7;
+         transition: opacity, text, .3s;
+
+         &:hover {
+
+            opacity        : 1;
+            text-decoration: underline;
+         }
+      }
+   }
+}
+
+@media only screen and (max-width: 1150px) {
+
+   footer#footer {
+
+      .footer-wrapper {
+
+         padding: 7rem;
+      }
+   }
+}
+
+@media only screen and (max-width: 900px) {
+
+   footer#footer {
+
+      .footer-wrapper {
+
+         display       : flex;
+         flex-direction: column;
+         align-items   : center;
+
+         text-align: center;
+
+         gap: 2rem;
+      }
+
+      .footer__logo {
+
+         height: 5rem;
+      }
+   }
+}

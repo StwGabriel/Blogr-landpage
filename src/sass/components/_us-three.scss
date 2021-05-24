@@ -6,8 +6,6 @@
    margin-top: 5.5rem;
    overflow-x: hidden;
 
-   padding: 10rem 0 20vw 0;
-
    .us-three-wrapper {
 
       @include var.us-wrapper--desk;
@@ -16,6 +14,8 @@
 
          'image content'
       ;
+
+      padding: 10rem 0 15vw 0;
    }
 
    .us-three__image-box {
