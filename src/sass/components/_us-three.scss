@@ -3,8 +3,9 @@
 
 #us-three {
 
-   margin-top: 5.5rem;
-   overflow-x: hidden;
+   padding-top: 15rem;
+   margin-top : 6rem;
+   overflow-x : hidden;
 
    .us-three-wrapper {
 
@@ -15,7 +16,7 @@
          'image content'
       ;
 
-      padding: 10rem 0 15vw 0;
+      padding: 10rem 0 clamp(10rem, 15vw, 20rem) 0;
    }
 
    .us-three__image-box {
@@ -23,6 +24,7 @@
       @include var.us-image-box--desk;
 
       width    : max(40vw, 50rem);
+      max-width: 65rem; 
       transform: translateX(-27.9rem);
    }
 

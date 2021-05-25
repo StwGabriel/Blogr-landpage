@@ -11,6 +11,7 @@
 }
 
 body {
+  width: 144rem;
   background-color: #fff;
   margin: 0 auto;
 }
@@ -30,8 +31,7 @@ header#header {
   border-radius: 0 0 0 10rem;
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
-  min-height: 80vh;
-  height: 60rem;
+  min-height: 60rem;
 }
 header#header .header-wrapper {
   background: url(../assets/bg-pattern-intro.svg) 220% no-repeat;
@@ -43,7 +43,7 @@ header#header .header-wrapper {
 header#header .header-wrapper .header-wrapper__content {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 60rem;
   width: min(144rem, 100%);
   padding: 4.5rem 16.5rem;
   margin: 0 auto;
@@ -429,7 +429,6 @@ header#header .header__content .CTA__buttons a + a:hover {
 }
 #us-one {
   overflow-x: hidden;
-  padding-bottom: 20vw;
 }
 #us-one .us-one-wrapper {
   display: grid;
@@ -437,6 +436,7 @@ header#header .header__content .CTA__buttons a + a:hover {
   padding: 15.5rem 0 0 0;
   overflow: visible;
   grid-template-areas: "title title" "content image";
+  padding-bottom: clamp(10rem, 20vw, 32rem);
 }
 #us-one .us-one__title {
   font-family: "Overpass", sans-serif;
@@ -456,7 +456,8 @@ header#header .header__content .CTA__buttons a + a:hover {
   height: 40rem;
   margin-right: 1rem;
   overflow: visible;
-  width: max(42.1vw, 50rem);
+  width: max(42.1vw, 40rem);
+  max-width: 65rem;
 }
 #us-one .us-one__content {
   font-family: "Overpass", sans-serif;
@@ -593,7 +594,8 @@ header#header .header__content .CTA__buttons a + a:hover {
   }
 }
 #us-three {
-  margin-top: 5.5rem;
+  padding-top: 15rem;
+  margin-top: 6rem;
   overflow-x: hidden;
 }
 #us-three .us-three-wrapper {
@@ -602,7 +604,7 @@ header#header .header__content .CTA__buttons a + a:hover {
   padding: 15.5rem 0 0 0;
   overflow: visible;
   grid-template-areas: "image content";
-  padding: 10rem 0 15vw 0;
+  padding: 10rem 0 clamp(10rem, 15vw, 20rem) 0;
 }
 #us-three .us-three__image-box {
   grid-area: image;
@@ -613,6 +615,7 @@ header#header .header__content .CTA__buttons a + a:hover {
   margin-right: 1rem;
   overflow: visible;
   width: max(40vw, 50rem);
+  max-width: 65rem;
   transform: translateX(-27.9rem);
 }
 #us-three .us-three__content {
@@ -692,7 +695,7 @@ footer#footer {
   border-radius: 0 10rem 0 0;
   color: white;
   font-weight: 400;
-  margin-top: 4.6rem;
+  margin-top: 2.8rem;
 }
 footer#footer .footer-wrapper {
   width: min(144rem, 100%);
