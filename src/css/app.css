@@ -436,7 +436,7 @@ header#header .header__content .CTA__buttons a + a:hover {
   padding: 15.5rem 0 0 0;
   overflow: visible;
   grid-template-areas: "title title" "content image";
-  padding-bottom: clamp(10rem, 20vw, 32rem);
+  padding-bottom: clamp(10rem, 15vw, 32rem);
 }
 #us-one .us-one__title {
   font-family: "Overpass", sans-serif;
@@ -456,8 +456,8 @@ header#header .header__content .CTA__buttons a + a:hover {
   height: 40rem;
   margin-right: 1rem;
   overflow: visible;
-  width: max(42.1vw, 40rem);
-  max-width: 65rem;
+  width: max(50vw, 50rem);
+  max-width: 64rem;
 }
 #us-one .us-one__content {
   font-family: "Overpass", sans-serif;
@@ -522,7 +522,7 @@ header#header .header__content .CTA__buttons a + a:hover {
 #us-two {
   background: linear-gradient(to right, #2c2d3f, #3f4164);
   border-radius: 0 10rem 0 10rem;
-  margin: clamp(-12.2rem, -10vw, 30rem) 0 5rem 0;
+  margin: -3.5rem 0 5rem 0;
 }
 #us-two .us-two-wrapper {
   background: url(../assets/bg-pattern-circles.svg) no-repeat -21rem -50rem;
@@ -709,7 +709,7 @@ footer#footer h4 {
   margin: 1rem 0 3rem 1rem;
 }
 footer#footer li {
-  margin: 1.5rem 0;
+  margin: 1.2rem 0;
 }
 footer#footer li a {
   margin: 1rem 0 0 1rem;

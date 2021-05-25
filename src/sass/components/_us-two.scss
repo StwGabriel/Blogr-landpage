@@ -1,12 +1,12 @@
+//
 @use '../abstracts/'as var;
-
 
 #us-two {
 
    background   : linear-gradient(to right, var.$Very-dark-gray-blue, var.$Very-dark-desaturated-blue);
    border-radius: 0 10rem 0 10rem; // top top bottom bottom / right left left right
 
-   margin: clamp(-12.2rem, -10vw, 30rem) 0 5rem 0;
+   margin:-3.5rem 0 5rem 0;
 
    .us-two-wrapper {
 

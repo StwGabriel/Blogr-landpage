@@ -14,7 +14,7 @@
          'title title'
          'content image'
       ;
-      padding-bottom: clamp(10rem, 20vw, 32rem);
+      padding-bottom: clamp(10rem, 15vw, 32rem);
    }
 
    .us-one__title {
@@ -26,8 +26,8 @@
    .us-one__image-box {
 
       @include var.us-image-box--desk;
-      width    : max(42.1vw, 40rem);
-      max-width: 65rem;
+      width    : max(50vw, 50rem);
+      max-width: 64rem;
    }
 
    .us-one__content {
