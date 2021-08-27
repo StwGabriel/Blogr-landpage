@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-![screenshot](./.github/screenshot.jpg)
+![screenshot](./github/screenshot.png)
 
 ### Links
 
@@ -37,7 +37,7 @@ This is a very simple site! In CSS I used Flex Box in almost everything and adde
 ### Built with
 
 - Semantic HTML5 markup
-- Sass
+- Scss
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
